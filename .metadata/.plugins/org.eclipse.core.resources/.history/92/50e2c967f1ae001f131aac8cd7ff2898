@@ -1,0 +1,21 @@
+package br;
+
+	
+public class StaticMethod {
+
+	static int count = 0; // Static member shared among all instances
+
+    public void increment() {
+        count++;
+    }
+    
+    public static void main(String[] args) {
+    	StaticMethod obj1 = new StaticMethod();
+    	StaticMethod obj2 = new StaticMethod();
+
+        obj1.increment();
+        obj2.increment();
+
+        System.out.println("Count: " + StaticMethod.count); // Output: 2
+
+}

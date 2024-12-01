@@ -1,0 +1,28 @@
+package br;
+
+	
+public class StaticMethod {
+
+	
+	    static int staticValue = 100;
+	    int nonStaticValue = 200;
+
+	    public static void staticMethod1() {
+	        System.out.println("Static value: " + staticValue);
+	        // System.out.println("Non-static value: " + nonStaticValue); // Error
+	    }
+
+	    public void nonStaticMethod() {
+	        System.out.println("Static value: " + staticValue);
+	        System.out.println("Non-static value: " + nonStaticValue);
+	    }
+
+	    public static void main(String[] args) {
+	    	StaticMethod.staticMethod1();
+
+	    	StaticMethod obj = new StaticMethod();
+	        obj.nonStaticMethod();
+	    }
+	}
+
+

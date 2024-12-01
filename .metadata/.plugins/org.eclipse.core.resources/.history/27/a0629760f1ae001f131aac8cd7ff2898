@@ -1,0 +1,22 @@
+package br;
+
+	
+class StaticMemberExample {
+    static int count = 0; // Static member shared among all instances
+
+    public void increment() {
+        count++;
+    }
+
+    public static void main(String[] args) {
+        StaticMemberExample obj1 = new StaticMemberExample();
+        StaticMemberExample obj2 = new StaticMemberExample();
+
+        obj1.increment();
+        obj2.increment();
+
+        System.out.println("Count: " + StaticMemberExample.count); // Output: 2
+    }
+}
+
+

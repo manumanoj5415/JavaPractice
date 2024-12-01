@@ -1,0 +1,14 @@
+package br;
+
+
+public class StaticMethod {
+
+	   public static void show() { // Corrected method declaration
+	        System.out.println("manu"); // Fixed typo
+	    }
+    public static void main (String[] args) {
+    	
+    	show();
+    	
+    }
+}

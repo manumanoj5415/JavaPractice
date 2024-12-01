@@ -1,0 +1,12 @@
+package br;
+
+public class IntToString {
+
+	
+	public static void main (String[] args) {
+		
+		int x = 120;
+		String y = String.valueOf(x);
+		System.out.println(y+20);
+	}
+}
